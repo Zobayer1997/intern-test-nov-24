@@ -1,0 +1,12 @@
+public function up()
+{
+    Schema::create('images', function (Blueprint $table) {
+        $table->id();
+        $table->string('filepath');
+        $table->timestamps();
+    });
+}
+php artisan migrate
+git add .
+git commit -m "Add images table migration"
+git push
